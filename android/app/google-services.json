@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1061373496172",
+    "project_id": "keep-notes-auth",
+    "storage_bucket": "keep-notes-auth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061373496172:android:f48ad0536bc7d5e77cc149",
+        "android_client_info": {
+          "package_name": "com.example.keep_notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061373496172-kdrihvihgbeq4vvhphp2ilnsfv12gt8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP5O7EjZrrkKtVhLOxae_yTkOYFEdi9tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061373496172-kdrihvihgbeq4vvhphp2ilnsfv12gt8c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1061373496172-hok2205bq88s07qn5s5rsv61j7u7val7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.keepNotes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
