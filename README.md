@@ -1,205 +1,145 @@
 # 📝 Keep Notes - My Notes App
 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)
+[![Flutter](https://img.shields.io/badge/Flutter-3.10+-02569B?style=for-the-badge&logo=flutter)](https://flutter.dev/)
+[![Firebase](https://img.shields.io/badge/Firebase-Platform-FFCA28?style=for-the-badge&logo=firebase)](https://firebase.google.com/)
+[![Dart](https://img.shields.io/badge/Dart-3.10+-0175C2?style=for-the-badge&logo=dart)](https://dart.dev/)
+[![Android](https://img.shields.io/badge/Android-Supported-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
+[![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)](#)
 
-A modern Flutter-based note taking application for creating, organizing, securing, and managing important notes with Firebase authentication, cloud sync, reminders, voice notes, image attachments, PDF export, and home widget support.
+> A modern Flutter-based note taking application for creating, organizing, securing, and managing important notes with Firebase authentication, cloud sync, reminders, voice notes, image attachments, PDF export, and home widget support.
 
 ---
 
 ## 📱 Overview
 
-**Keep Notes - My Notes App** is a smart and user-friendly note taking application built using Flutter and Dart.
+**Keep Notes - My Notes App** is a smart and user-friendly note taking application designed for students, professionals, and daily users who want to save important information in a simple, secure, and organized way.
 
-This app helps users save important notes, organize them with labels, attach images, record voice notes, set reminders, archive notes, move notes to trash, export notes as PDF, and protect the app using a PIN lock.
+The app allows users to create notes, edit notes, organize notes with labels, set reminders, attach images, record voice notes, archive notes, move deleted notes to trash, export notes as PDF, and protect the app using a PIN lock.
 
-The main goal of this project is to provide a simple, clean, secure, and feature-rich notes app that can be used for daily personal tasks, study notes, ideas, reminders, and important information.
+It is built with **Flutter**, **Dart**, and **Firebase**, making it modern, scalable, and suitable for cross-platform development.
 
----
+### ✨ Key Highlights
 
-## ✨ Key Highlights
-
-- 📝 Create and manage personal notes
-- 🔐 Firebase email/password authentication
-- 🔑 Password reset support
-- 🔒 PIN lock for app privacy
-- ☁️ Cloud note sync using Firebase Firestore
-- 💾 Local note caching using SharedPreferences
-- 🖼️ Image attachment support
-- 🎙️ Voice note recording support
-- 🔊 Audio playback support
-- ⏰ Reminder notification support
-- 🏷️ Label-based note organization
-- 📌 Pin important notes
-- ⭐ Mark notes as favorite
-- 📦 Archive notes
-- 🗑️ Trash and restore system
-- 📄 Export notes as PDF
-- 📤 Share exported notes
-- 🏠 Android home widget support
-- 🌙 Light, dark, and system theme support
-- 🎨 Multiple color palette options
-- 🌐 English and Bangla language support
-- 📊 Notes statistics
-- 🔍 Search, filter, and sort notes
-- 🔁 Backup and restore support
+- 📝 **Smart Notes Management** - Create, edit, duplicate, archive, restore, and delete notes
+- 🔐 **Firebase Authentication** - Secure email/password login and signup system
+- ☁️ **Cloud Sync** - Notes can be stored and synced using Firebase Firestore
+- 🔒 **PIN Lock** - Protect personal notes with a 4-6 digit PIN
+- ⏰ **Reminders** - Set note reminders using local notifications
+- 🖼️ **Image Attachments** - Add images to notes for visual information
+- 🎙️ **Voice Notes** - Record and attach audio notes
+- 📄 **PDF Export** - Export notes as professional PDF files
+- 🏠 **Home Widget** - Android home widget support for quick access
+- 🌙 **Dark Mode** - Light, dark, and system theme support
+- 🌐 **Language Support** - English and Bangla language support
+- 🎨 **Custom Theme Palette** - Multiple color palettes for personalization
 
 ---
 
 ## 🚀 Features
 
-### 🔐 Authentication
+### 👤 User Features
 
-The app includes Firebase-based authentication for user account management.
+#### 🔐 Authentication
 
-- User sign up
-- User sign in
-- Firebase email/password login
-- Forgot password option
+- Create a new account
+- Login with email and password
+- Firebase Authentication integration
+- Forgot password support
 - Password reset email
-- Change password support
-- User-specific notes collection
+- Change password option
+- User-specific note access
 
----
-
-### 📝 Notes Management
-
-Users can create and manage notes easily.
+#### 📝 Notes Management
 
 - Create new notes
 - Edit existing notes
-- Save note title and body
+- Save note title and description
 - Duplicate notes
 - Delete notes
 - Restore deleted notes
 - Permanently delete notes
-- Organize notes in grid or list view
+- Organize notes in grid or list layout
 
----
-
-### 📌 Pin & Favorite Notes
-
-Important notes can be highlighted for quick access.
+#### 📌 Pin & Favorite Notes
 
 - Pin important notes
 - Unpin notes
 - Mark notes as favorite
-- Remove favorite status
+- Remove notes from favorite
 - Keep important notes visible at the top
 
----
-
-### 🏷️ Labels
-
-The app supports label-based organization.
+#### 🏷️ Labels & Organization
 
 - Add labels to notes
 - Use multiple labels
 - Filter notes by labels
-- Example labels:
-  - work
-  - ideas
-  - personal
-  - study
-  - reminder
+- Organize personal, study, work, and idea notes
+- Keep notes clean and structured
 
----
+#### 🔍 Search, Filter & Sort
 
-### 🔍 Search, Filter & Sort
-
-The app makes it easy to find notes quickly.
-
-- Search notes
+- Search notes quickly
 - Search trash notes
 - Filter pinned notes
 - Filter notes with labels
 - Filter notes due today
-- Filter notes without reminder
-- Sort by newest first
-- Sort by oldest first
-- Sort by title
-- Sort by pinned first
+- Filter notes without reminders
+- Sort notes by newest first
+- Sort notes by oldest first
+- Sort notes by title
+- Sort notes by pinned first
 
----
-
-### 📦 Archive System
-
-Users can archive notes they do not want to keep in the main notes list.
+#### 📦 Archive System
 
 - Archive notes
 - View archived notes
 - Unarchive notes
-- Keep main notes list clean
+- Keep the main notes screen clean
+- Separate active notes from old notes
 
----
-
-### 🗑️ Trash System
-
-Deleted notes are moved to trash instead of being removed immediately.
+#### 🗑️ Trash System
 
 - Move notes to trash
-- View trash notes
+- View deleted notes
 - Restore notes from trash
-- Delete notes forever
+- Delete notes permanently
 - Undo move to trash
-- Confirm before trash option
+- Confirm before moving notes to trash
 
----
-
-### ⏰ Reminders & Notifications
-
-The app supports note reminders using local notifications.
+#### ⏰ Reminders & Notifications
 
 - Set reminder for notes
-- Clear reminder
-- Reminder notification support
+- Clear note reminders
+- Local notification support
 - Due today filter
 - Timezone support
-- Exact alarm permission support on Android
+- Exact alarm support on Android
+- Useful for tasks, study plans, and important events
 
----
+#### 🖼️ Image Attachments
 
-### 🖼️ Image Attachments
-
-Users can attach images to notes.
-
-- Add image to notes
+- Attach images to notes
 - Store image path
-- View image attachments
+- View image attachments inside notes
 - Useful for screenshots, documents, and visual notes
 
----
-
-### 🎙️ Voice Notes
-
-The app supports voice note recording.
+#### 🎙️ Voice Notes
 
 - Record voice notes
 - Stop voice recording
 - Attach audio to notes
-- Play audio
-- Pause audio
+- Play recorded audio
+- Pause audio playback
 - Microphone permission handling
 
----
+#### 📄 PDF Export
 
-### 📄 PDF Export
-
-Notes can be exported as PDF files.
-
-- Export note as PDF
-- Save generated PDF
+- Export a note as PDF
+- Save generated PDF file
 - Share exported PDF
-- Useful for reports, study notes, and documentation
+- Useful for reports, assignments, study notes, and documentation
 
----
-
-### 🔁 Backup & Restore
-
-The app supports backup and restore features.
+#### 🔁 Backup & Restore
 
 - Create notes backup
 - Restore notes from backup
@@ -207,36 +147,24 @@ The app supports backup and restore features.
 - User-specific backup filename
 - Local JSON backup support
 
----
+#### 🏠 Android Home Widget
 
-### 🏠 Android Home Widget
+- Home widget support
+- Quick access to notes
+- Small, medium, and large widget support
+- Launch app from widget
+- Useful for fast note access
 
-The app includes Android home widget support.
-
-- Small notes widget
-- Medium notes widget
-- Large notes widget
-- Home widget launch support
-- Quick access from home screen
-
----
-
-### 🔒 PIN Lock
-
-Users can protect the app using a PIN.
+#### 🔒 PIN Lock
 
 - Set 4-6 digit PIN
 - Change PIN
 - Remove PIN
-- Lock now option
-- Unlock notes with PIN
-- Extra privacy for personal notes
+- Lock the app manually
+- Unlock notes using PIN
+- Extra privacy for personal information
 
----
-
-### 🎨 Theme & Customization
-
-The app includes a modern Material 3 UI with theme customization.
+#### 🎨 Theme & Customization
 
 - Light theme
 - Dark theme
@@ -254,29 +182,21 @@ The app includes a modern Material 3 UI with theme customization.
   - Coral
   - Indigo
 
----
-
-### 🌐 Language Support
-
-The app supports multiple languages.
+#### 🌐 Language Support
 
 - English language
 - Bangla language
 - Persistent language selection
 - Localized app labels and messages
 
----
+#### 📊 Notes Statistics
 
-### 📊 Notes Statistics
-
-Users can view useful note statistics.
-
-- Total notes
-- Active notes
-- Archived notes
-- Trash notes
-- Pinned notes
-- Notes with reminders
+- Total notes count
+- Active notes count
+- Archived notes count
+- Trash notes count
+- Pinned notes count
+- Notes with reminders count
 
 ---
 
@@ -286,23 +206,22 @@ Users can view useful note statistics.
 
 - **Flutter** - Cross-platform UI framework
 - **Dart** - Programming language
-- **Material 3** - Modern UI design system
+- **Material 3** - Modern design system
 - **Flutter Localizations** - Multi-language support
 
 ### Backend & Cloud
 
-- **Firebase Core** - Firebase initialization
-- **Firebase Authentication** - User login and registration
-- **Cloud Firestore** - Cloud note storage and sync
+- **Firebase Authentication** - Email/password authentication
+- **Cloud Firestore** - Cloud database for notes
 - **Firebase Analytics** - Analytics event tracking
 - **Firebase Remote Config** - Remote app configuration
 
 ### Local Storage & Device Features
 
-- **SharedPreferences** - Local app settings and note cache
+- **SharedPreferences** - Local storage for settings and cache
 - **Flutter Local Notifications** - Reminder notifications
-- **Timezone** - Notification timezone management
-- **Home Widget** - Android home screen widget
+- **Timezone** - Timezone-based reminder scheduling
+- **Home Widget** - Android home screen widget support
 - **Image Picker** - Image attachment support
 - **Record** - Voice recording
 - **Audioplayers** - Audio playback
@@ -310,49 +229,39 @@ Users can view useful note statistics.
 - **PDF** - PDF generation
 - **Share Plus** - Share exported files
 
----
-
-## 📦 Key Packages
+### Key Packages
 
 ```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-
-  flutter_localizations:
-    sdk: flutter
-
-  cupertino_icons: ^1.0.8
-  shared_preferences: ^2.5.4
-  flutter_local_notifications: ^21.0.0
-  timezone: ^0.11.0
-  flutter_timezone: ^5.0.2
-  home_widget: ^0.9.0
-  path_provider: ^2.1.5
-  image_picker: ^1.1.2
-  record: ^6.0.0
-  audioplayers: ^6.1.0
-  firebase_core: ^4.5.0
-  firebase_auth: ^6.2.0
-  firebase_analytics: ^12.0.0
-  pdf: ^3.11.3
-  share_plus: ^11.1.0
-  cloud_firestore: ^6.2.0
-  firebase_remote_config: ^6.3.0
+- firebase_core
+- firebase_auth
+- cloud_firestore
+- firebase_analytics
+- firebase_remote_config
+- shared_preferences
+- flutter_local_notifications
+- timezone
+- flutter_timezone
+- home_widget
+- path_provider
+- image_picker
+- record
+- audioplayers
+- pdf
+- share_plus
 ```
 
 ---
 
 ## 📋 Prerequisites
 
-Before running this project, make sure you have installed:
+Before you begin, ensure you have:
 
-- Flutter SDK
-- Dart SDK
+- Flutter SDK installed
+- Dart SDK installed
+- Firebase account
 - Android Studio or VS Code
 - Android emulator or physical Android device
-- Firebase account
-- Git
+- Git installed
 
 Check Flutter installation:
 
@@ -379,56 +288,46 @@ flutter pub get
 
 ### 3️⃣ Firebase Setup
 
-This app uses Firebase Authentication, Firestore, Analytics, and Remote Config.
+This app uses Firebase Authentication, Cloud Firestore, Firebase Analytics, and Firebase Remote Config.
 
-To configure Firebase:
+#### Option A: Use Existing Configuration
 
-1. Go to Firebase Console
-2. Create a new Firebase project
-3. Add Android app
-4. Download `google-services.json`
-5. Place it inside:
+If Firebase is already configured, make sure the required Firebase files are available.
+
+For Android, place:
 
 ```text
 android/app/google-services.json
 ```
 
+#### Option B: Full Firebase Setup
+
+1. Go to Firebase Console
+2. Create a new Firebase project
+3. Add an Android app
+4. Download `google-services.json`
+5. Place it inside `android/app/`
 6. Enable Firebase Authentication
 7. Enable Email/Password sign-in method
 8. Enable Cloud Firestore
-9. Configure Firebase for other platforms if needed
-
----
+9. Enable Firebase Analytics
+10. Enable Firebase Remote Config if needed
+11. Generate or update `firebase_options.dart`
 
 ### 4️⃣ Run the App
 
-For Android:
-
 ```bash
+# For Android
 flutter run
-```
 
-For Web:
-
-```bash
+# For Web
 flutter run -d chrome
-```
 
-For Windows:
-
-```bash
+# For Windows
 flutter run -d windows
-```
 
-To see available devices:
-
-```bash
+# For specific device
 flutter devices
-```
-
-Run on a specific device:
-
-```bash
 flutter run -d <device-id>
 ```
 
@@ -439,31 +338,45 @@ flutter run -d <device-id>
 ```text
 Keep_notes/
 │
-├── android/                         # Android native configuration
-├── ios/                             # iOS configuration
-├── web/                             # Web configuration
-├── windows/                         # Windows configuration
-├── macos/                           # macOS configuration
-├── linux/                           # Linux configuration
-├── test/                            # Flutter tests
+├── android/                      # Android configuration
+├── ios/                          # iOS configuration
+├── linux/                        # Linux configuration
+├── macos/                        # macOS configuration
+├── web/                          # Web configuration
+├── windows/                      # Windows configuration
+├── test/                         # Flutter test files
 │
 ├── assets/
-│   └── app_icon/                    # App icon assets
+│   └── app_icon/                 # App icon assets
 │
 ├── lib/
-│   ├── main.dart                    # Main app code, screens, services, and logic
-│   └── firebase_options.dart        # Firebase platform configuration
+│   ├── main.dart                 # Main app code, screens, services, and logic
+│   └── firebase_options.dart     # Firebase platform configuration
 │
-├── firebase.json                    # Firebase configuration
-├── pubspec.yaml                     # Project dependencies
-├── pubspec.lock                     # Dependency lock file
-├── analysis_options.yaml            # Flutter linting rules
-└── README.md                        # Project documentation
+├── firebase.json                 # Firebase configuration
+├── pubspec.yaml                  # Project dependencies
+├── pubspec.lock                  # Dependency lock file
+├── analysis_options.yaml         # Flutter linting rules
+└── README.md                     # Project documentation
 ```
 
 ---
 
-## 🔐 Required Permissions
+## 🔒 Security & Privacy
+
+This app includes multiple privacy-focused features:
+
+```text
+- Firebase Authentication for secure login
+- User-specific note storage
+- PIN lock for app privacy
+- Password reset support
+- Local settings stored securely using SharedPreferences
+- Notes can be synced under logged-in user account
+- Trash system prevents accidental permanent deletion
+```
+
+### Required Permissions
 
 The app may require the following Android permissions:
 
@@ -473,22 +386,20 @@ android.permission.SCHEDULE_EXACT_ALARM
 android.permission.RECORD_AUDIO
 ```
 
-### Why these permissions are needed:
+### Permission Usage
 
-- **POST_NOTIFICATIONS** - To show note reminder notifications
-- **SCHEDULE_EXACT_ALARM** - To schedule exact reminders
-- **RECORD_AUDIO** - To record voice notes
+- **POST_NOTIFICATIONS** - Used to show note reminder notifications
+- **SCHEDULE_EXACT_ALARM** - Used to schedule exact note reminders
+- **RECORD_AUDIO** - Used to record voice notes
 
 ---
 
 ## 🔥 Firebase Features Used
 
-This project uses Firebase for secure and cloud-based app features.
-
 ### Firebase Authentication
 
-- Sign in
 - Sign up
+- Sign in
 - Password reset
 - Change password
 - User-specific account access
@@ -503,8 +414,9 @@ This project uses Firebase for secure and cloud-based app features.
 ### Firebase Analytics
 
 - Track app events
-- Track login and signup events
-- Track password change events
+- Track login event
+- Track signup event
+- Track password change event
 
 ### Firebase Remote Config
 
@@ -515,57 +427,61 @@ This project uses Firebase for secure and cloud-based app features.
 
 ---
 
-## 🧠 How the App Works
+## 📖 Documentation
 
-1. User signs in or creates an account.
-2. Firebase Authentication verifies the user.
-3. Notes are stored under the logged-in user's account.
-4. Notes are saved locally using SharedPreferences.
-5. Notes are synced with Firebase Firestore.
-6. Users can create, edit, delete, archive, pin, favorite, and label notes.
-7. Users can add image and voice attachments.
-8. Users can set reminders for important notes.
-9. Local notifications show note reminders.
-10. Users can export notes as PDF.
-11. PIN lock can protect private notes.
-12. Home widget can show quick note information on Android.
+This README includes the full setup and usage guide for the project.
+
+Useful sections:
+
+- Installation & Setup
+- Firebase Setup
+- Project Structure
+- Required Permissions
+- Testing Checklist
+- Build Commands
+- Troubleshooting
 
 ---
 
-## 🎨 UI/UX Design
+## 🎨 Design System
 
-The app uses a clean and modern Material 3 design.
+### Color Palettes
 
-### Design Features
+```dart
+Emerald
+Ocean
+Sunset
+Rose
+Amber
+Violet
+Teal
+Slate
+Coral
+Indigo
+```
 
-- Rounded cards
+### Theme Modes
+
+- Light Theme
+- Dark Theme
+- System Theme
+- AMOLED-style Dark Theme
+
+### UI Components
+
+- Rounded note cards
 - Clean input fields
-- Smooth app layout
-- Light and dark mode
-- AMOLED-style dark theme
-- Color palette customization
-- Grid and list note layout
-- Responsive design
-- Simple and readable typography
-
-### Main Screens
-
-- Login Page
-- Sign Up Page
-- Reset Password Page
-- Notes Home Page
-- Note Editor Page
-- Archive Page
-- Trash Page
-- Settings / Actions Menu
-- PIN Unlock Page
-- Change Password Page
+- Material 3 buttons
+- Responsive grid/list view
+- Smooth navigation
+- Minimal and readable design
+- Theme-based color system
 
 ---
 
-## 🧪 Testing Checklist
+## 🧪 Testing
 
-Use this checklist before final release:
+### Manual Testing Checklist
 
 - [ ] App runs successfully
 - [ ] Firebase initialization works
@@ -575,6 +491,7 @@ Use this checklist before final release:
 - [ ] Change password works
 - [ ] Create note works
 - [ ] Edit note works
+- [ ] Duplicate note works
 - [ ] Delete note works
 - [ ] Restore note works
 - [ ] Delete forever works
@@ -603,18 +520,19 @@ Use this checklist before final release:
 
 ---
 
-## 🚀 Build Commands
+## 🚀 Deployment
 
-### Android APK
+### Android
 
 ```bash
 flutter build apk --release
+flutter build appbundle --release
 ```
 
-### Android App Bundle
+### iOS
 
 ```bash
-flutter build appbundle --release
+flutter build ios --release
 ```
 
 ### Web
@@ -629,31 +547,50 @@ flutter build web --release
 flutter build windows --release
 ```
 
-### iOS
+### Linux
 
 ```bash
-flutter build ios --release
+flutter build linux --release
+```
+
+### macOS
+
+```bash
+flutter build macos --release
 ```
 
 ---
 
-## ⚠️ Known Limitations
+## 💡 Key Achievements
 
-- Firebase setup is required before running full authentication and cloud sync features.
-- Voice recording requires microphone permission.
-- Reminder notifications require notification permission.
-- Exact alarm permission may be required on some Android versions.
-- Android home widget features may not work on all platforms.
-- Web and desktop platforms may not support all native Android features.
-- If Firebase configuration files are missing, the app may not run properly.
+- ✅ **Modern Note Taking App** - Clean and practical note management system
+- ✅ **Firebase Authentication** - Secure login and signup system
+- ✅ **Cloud Firestore Sync** - User-specific notes can be stored in cloud
+- ✅ **PIN Lock System** - Extra privacy for personal notes
+- ✅ **Reminder Support** - Local notifications for important notes
+- ✅ **Voice Notes** - Audio recording and playback support
+- ✅ **Image Attachments** - Visual note support
+- ✅ **PDF Export** - Notes can be exported and shared as PDF
+- ✅ **Home Widget Support** - Android widget support for quick access
+- ✅ **Multi-language Support** - English and Bangla support
+- ✅ **Custom Themes** - Multiple palettes and dark mode support
+- ✅ **Cross-platform** - Android, iOS, Web, Windows, macOS, and Linux support from one codebase
 
 ---
 
-## 🐛 Troubleshooting
+## 🐛 Known Issues & Solutions
 
-### App does not run
+If you encounter any problems:
 
-Try:
+1. Verify Firebase configuration
+2. Make sure all dependencies are installed
+3. Check Flutter doctor
+4. Check Android permissions
+5. Check notification permission
+6. Check microphone permission for voice notes
+7. Check `google-services.json` location
+
+### Common Fix
 
 ```bash
 flutter clean
@@ -661,44 +598,13 @@ flutter pub get
 flutter run
 ```
 
----
+### Flutter Doctor
 
-### Firebase error
+```bash
+flutter doctor -v
+```
 
-Check:
-
-- `google-services.json` is placed inside `android/app/`
-- Firebase project is created
-- Firebase Authentication is enabled
-- Cloud Firestore is enabled
-- `firebase_options.dart` is correctly generated
-
----
-
-### Notification not working
-
-Check:
-
-- Notification permission is allowed
-- Exact alarm permission is allowed
-- App is not battery restricted
-- Device timezone is correct
-
----
-
-### Voice note not working
-
-Check:
-
-- Microphone permission is allowed
-- Device microphone is working
-- App has storage/path access where needed
-
----
-
-### Dependencies problem
-
-Run:
+### Dependency Update
 
 ```bash
 flutter pub get
@@ -707,15 +613,15 @@ flutter pub upgrade
 
 ---
 
-### Flutter setup problem
+## ⚠️ Known Limitations
 
-Run:
-
-```bash
-flutter doctor -v
-```
-
-Then fix the issues shown in the terminal.
+- Firebase setup is required for authentication and cloud sync
+- Voice recording requires microphone permission
+- Reminder notifications require notification permission
+- Exact alarm permission may be required on some Android versions
+- Android home widget features may not work on all platforms
+- Web and desktop platforms may not support all native Android features
+- If Firebase configuration files are missing, the app may not run properly
 
 ---
 
@@ -743,30 +649,36 @@ Possible future updates:
 
 ## 🤝 Contributing
 
-Contributions are welcome.
-
-To contribute:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-2. Create a new branch
+2. Create your feature branch
 
 ```bash
-git checkout -b feature/new-feature
+git checkout -b feature/AmazingFeature
 ```
 
 3. Commit your changes
 
 ```bash
-git commit -m "Add new feature"
+git commit -m "Add some AmazingFeature"
 ```
 
-4. Push to your branch
+4. Push to the branch
 
 ```bash
-git push origin feature/new-feature
+git push origin feature/AmazingFeature
 ```
 
 5. Open a Pull Request
+
+---
+
+## 📝 License
+
+This project is open for educational and learning purposes.
+
+If you want to use an open-source license, you can add a `LICENSE` file to the repository.
 
 ---
 
@@ -775,32 +687,46 @@ git push origin feature/new-feature
 **Mehedi Hasan**
 
 - GitHub: [@mehedi77k](https://github.com/mehedi77k)
-- Project: Keep Notes App
+- Project: Keep Notes - My Notes App
 - Built with Flutter, Dart, and Firebase
 
 ---
 
 ## 📞 Support
 
-If you face any issue or have suggestions, please open an issue in the GitHub repository.
+For support, open an issue in the GitHub repository.
 
 Repository:  
 https://github.com/mehedi77k/Keep_notes
 
 ---
 
-## 📌 Project Status
+## 🙏 Acknowledgments
 
-```text
-Status: Active Development
-Version: 1.0.0+1
-Platform: Flutter
-Main Language: Dart
-Backend: Firebase
-```
+- Flutter team for the amazing framework
+- Firebase team for powerful backend services
+- Dart team for the programming language
+- Open-source package contributors
+- All testers and users
 
 ---
 
-## ⭐ Show Your Support
+## 📊 Project Status
 
-If you like this project, please give it a star on GitHub.
+✅ **Active Development** - Features are being improved and updated
+
+**Version**: 1.0.0+1  
+**Platform**: Flutter  
+**Main Language**: Dart  
+**Backend**: Firebase  
+**Status**: Active Development
+
+---
+
+<div align="center">
+
+### ⭐ Star this repository if you find it helpful!
+
+Made with ❤️ using Flutter and Firebase
+
+</div>
